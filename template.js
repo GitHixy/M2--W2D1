@@ -71,18 +71,15 @@ for (let i = 0; i <= 15; i++) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let numeroIntero1 = 4
+let numeroIntero1 = 8
 let numeroIntero2 = 12
 
-if (numeroIntero1 === 8 ||
-    numeroIntero2 === 8 ||
-    numeroIntero1 + numeroIntero2 === 8 ||
+if (numeroIntero1 === 8 || numeroIntero2 === 8 ||
+  numeroIntero1 + numeroIntero2 === 8 ||
     numeroIntero1 - numeroIntero2 === 8 || 
     numeroIntero2 - numeroIntero1 === 8) {
-console.log("Uno dei due numeri è 8 o la loro somma/sottrazione è 8");
-} else {
-  console.log("Nessuna delle condizioni è soddisfatta");
-}
+console.log("Uno dei due numeri e' 8 o la loro addizzione/sottrazione e' 8");
+} 
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -90,11 +87,11 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 60 // Inserisci totale carrello
+let totalShoppingCart = 90 // Inserisci totale carrello
 let spedizione = 10
 
 if (totalShoppingCart > 50) {
-  console.log("Spedizione Gratuita");
+  console.log(totalShoppingCart + " Con Spedizione Gratuita");
 } else {
   console.log(totalShoppingCart + spedizione);
 }
