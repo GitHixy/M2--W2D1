@@ -4,7 +4,14 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let primoNumero = 5
+let secondoNumero = 9
+
+if (primoNumero > secondoNumero) {
+console.log("il numero maggiore è " + primoNumero);
+} else {
+console.log("il numero maggiore è " + secondoNumero);
+}
 
 /*
 ESERCIZIO 2
@@ -17,7 +24,19 @@ ESERCIZIO 2
   num >= 20 - mostra in console "Huge"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num = 8  //inserire il valore desiderato
+
+if (num < 5) {
+console.log("Tiny");
+} else if (num < 10) {
+  console.log("Small");
+} else if (num < 15) {
+  console.log("Medium");
+} else if (num < 20) {
+  console.log("Large");
+} else if (num >= 20) {
+  console.log("Huge");
+}
 
 //ESERCIZI SUI CICLI: 
 
@@ -25,13 +44,26 @@ ESERCIZIO 2
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+for (let i = 0; i <= 10; i++) {
+  if (i === 3 || i === 8) {
+    continue; // Salta i numeri 3 e 8
+  }
+  console.log(i);
+}
+
 
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+for (let i = 0; i <= 15; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " è un numero pari");
+  } else {
+    console.log(i + " è un numero dispari");
+  }
+}
+
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -39,7 +71,18 @@ ESERCIZIO 2
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numeroIntero1 = 4
+let numeroIntero2 = 12
+
+if (numeroIntero1 === 8 ||
+    numeroIntero2 === 8 ||
+    numeroIntero1 + numeroIntero2 === 8 ||
+    numeroIntero1 - numeroIntero2 === 8 || 
+    numeroIntero2 - numeroIntero1 === 8) {
+console.log("Uno dei due numeri è 8 o la loro somma/sottrazione è 8");
+} else {
+  console.log("Nessuna delle condizioni è soddisfatta");
+}
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -47,7 +90,14 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 60 // Inserisci totale carrello
+let spedizione = 10
+
+if (totalShoppingCart > 50) {
+  console.log("Spedizione Gratuita");
+} else {
+  console.log(totalShoppingCart + spedizione);
+}
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
